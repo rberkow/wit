@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block styles %}
+{{ super() }}
+<link rel='stylesheet' type='text/css' href='{{ MASTER_DIR }}/public/css/sidebar.css'>
+{% endblock styles %}
+
+{% block scripts %}
+{{ super() }}
+<script>
+$(document).ready(function() {
+  $('.sidebar ul').addClass('nav nav-stacked');
+  $('body').scrollspy({
+    target: '.sidebar',
+  });
+  var affixOffset = 50;
+  $('.sidebar').affix({
+    offset: {
+      top: $('#content').offset().top - affixOffset
+    }
+  });
+  $('.sidebar').css('top', affixOffset);
+});
+</script>
+{% endblock scripts %}
+
+{% block content %}
+<div class='container'>
+  <div class='row'>
+    <div class='col-md-9' id='content'>
+      {% block main_content %}
+      {% endblock main_content %}
+    </div>
+
+    <div class='col-md-3'>
+      <nav class='hidden-print hidden-sm hidden-xs sidebar'>
+        {% block sidebar %}
+        {% endblock sidebar %}
+        {{ table_of_contents }}
+      </nav>
+    </div>
+  </div>
+</div>
+{% endblock content %}

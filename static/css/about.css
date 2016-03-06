@@ -1,0 +1,17 @@
+.header {
+  text-align:center;
+}
+
+.main-featured-item {
+  text-align:center;
+  margin:20px 0;
+}
+
+.main-featured-item a {
+  color:#218868;
+}
+
+.main-featured-item a:hover {
+  color:#28ae7b;
+}
+
