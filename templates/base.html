@@ -33,6 +33,7 @@
 
   </head>
   <body>
+    
     <!-- Top navbar (for small window sizes) -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -48,9 +49,15 @@
 
         <div class="collapse navbar-collapse" id="navbar-collapse-section">
           <ul class="nav navbar-nav">
-            <li><a href="/about/">About</a></li>
-            <li><a href="/exec/">Who are we?</a></li>
+            <li><a href="/whyIT/">Why IT?</a></li>
             <li><a href="/events/">Events</a></li>
+            <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/exec/">Meet the exec</a></li>
+            <li><a href="/contact/">Contact</a></li>
+          </ul>
+        </li>
           </ul>
         </div>
       </div>
@@ -63,8 +70,24 @@
       </div>
     </div>
 
+
     <!-- Content -->
+    <div class="wrapper">
     {% block content %}{% endblock content %}
+
+    </div>
+    <div class="push"></div>
+    <div class="footer">
+      <div class="container">
+        <div class='text-center'>
+          Want to stay connected? Join us on Facebook! <br/>
+          <a href='https://www.facebook.com/womenITmcgill'><img src='/static/img/fb.png'></a>
+          <br/>
+        </div>
+      </div>
+
+  </div>
+
   </body>
 
   {% block scripts %}{% endblock scripts %}

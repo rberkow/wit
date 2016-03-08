@@ -7,32 +7,39 @@
 {% endblock styles %}
 
 {% block header %}
-<h1>Women in Technology</h1>
-
-<p> Connecting McGill women to a future in Information Technology</p>
+<div class='container'>
+  <img src="static/img/logo.png">
+  <h1>Women in Technology</h1>
+  <p>Connecting McGill women to a future in Information Technology</p>
+</div>
 {% endblock header %}
 
 {% block content %}
 <div class='container'>
   <div class='row'>
-    <div class='col-md-4 col-md-offset-2'>
-      <div class='main-featured-item'>
-        <h1><a href='/events/'>Events</a></h1>
-
-        <p>Past and upcoming events held by the club
-        </p>
-      </div>
-    </div>
 
     <div class='col-md-4'>
       <div class='main-featured-item'>
-        <h1><a href='/about/'>About us</a></h1>
-
-        <p>Find out what this club is all about
-        </p>
+        <a href='/whyIT/'>
+          <img src="static/img/about.jpg" class="img-circle">
+          <h1>Why IT?</h1>
+        </a>
+        <p>Find out what this club is all about</p>
       </div>
     </div>
 
+    <div class='col-md-4 col-md-offset-0'>
+      <div class='main-featured-item'>
+        <a href='/events/'>
+          <img src="static/img/events.png">
+          <h1>Events</h1>
+        </a>
+        <p>Past and upcoming events held by the club</p>
+      </div>
+    </div>
+
+<!--   </div>
+  <div class='row'>
     <div class='col-md-4 col-md-offset-2'>
       <div class='main-featured-item'>
         <h1><a href='/about/'>Who are we?</a></h1>
@@ -40,14 +47,33 @@
         <p>Meet the exec for 2015-2016
         </p>
       </div>
-    </div>
+    </div> -->
 
     <div class='col-md-4'>
       <div class='main-featured-item'>
-        <h1><a href='/contact/'>Contact</a></h1>
+        <a href='/contact/'>
+          <img src='static/img/contact.jpg' class='img-circle'>
+          <h1>Contact</h1>
+        </a>
+        <p>Contact us</p>
+      </div>
+    </div>
+  </div>
+</div>
 
-        <p>Contact us
-        </p>
+<div class='jumbotron'>
+  <div class='container'>
+    <div class='col-md-15 col-md-offset-0'>
+      <div class='other-featured-item'>
+        <div class='text-center'>
+          <h1>"Why are there so few women working in the IT and telecoms sector?"</h1>
+        </div>
+        <p></br>This question taken from a <a href='http://www.forbes.com/sites/timworstall/2012/10/02/why-are-there-so-few-women-in-it-and-telecoms/#6d1403af15df'>Forbes article </a> crosses everyone's mind. It is a known fact that women tend to be less active than men in the IT industry. However, the reason is unknown. Hence, in order to eliminate this question, we decided to promote women into the IT industry. Since men tend to be more involved, women either don't think of IT as an area to study, or they just tend to give up their ambition in IT. </p>
+ 
+        <p>In order to avoid this, our goal is to inspire women to study information technology. We plan to achieve this goal by arranging 
+        conferences and other informative events.</p>
+ 
+        <p>So as an organization, we hope to arrange events such as conferences and information sessions to inform McGill women on how to get involved and expand their knowledge. Furthermore, we hope to facilitate discussion and networking over this issue of women being less active in a friendly and open atmosphere where everyone will feel free to express their opinions. </p>
       </div>
     </div>
   </div>
