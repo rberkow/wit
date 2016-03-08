@@ -7,6 +7,11 @@
   margin:20px 0;
 }
 
+.other-featured-item {
+	text-align: left;
+	margin: 20px 0;
+}
+
 .main-featured-item a {
   color:#218868;
 }
@@ -15,3 +20,7 @@
   color:#28ae7b;
 }
 
+.jumbotron {
+	max-width: 100%;
+	font-size: 20px;
+}

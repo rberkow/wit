@@ -1,5 +1,6 @@
-body {
+html,body {
   margin-bottom:0;
+  height: 100%
 }
 
 .header {
@@ -35,3 +36,16 @@ body {
 .light-green {
   background-color:#f0fff0;
 }
+
+#holder {
+    min-height: 100%;
+    position:relative;
+}
+
+/*.footer{
+    bottom: 0;
+    height: 50px;
+    left: 0;
+    position: absolute;
+    right: 0;
+}*/

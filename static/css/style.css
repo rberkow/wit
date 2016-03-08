@@ -7,6 +7,10 @@ body {
   margin-bottom:50px;
 }
 
+html {
+  height:100%;
+}
+
 /* HEADERS */
 
 .title-brand {
@@ -114,7 +118,18 @@ hr {
 .navbar-default .navbar-link:hover {
   color: #327556;
 }
-
+* {
+  margin: 0;
+}
+.wrapper {
+  min-height: 100%;
+  height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+  height: 100%;
+  margin: 0 auto -60px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+  height: 60px; /* .push must be the same height as .footer */
+}
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #327556;
@@ -126,4 +141,8 @@ hr {
     color: #327556;
     background-color: #ffffff;
   }
+}
+.item-title, .section-title {
+  margin-top:0;
+  color:#218868;
 }
